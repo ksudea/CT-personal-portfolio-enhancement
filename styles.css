@@ -1,0 +1,615 @@
+/* Basic setup */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.5;
+	margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header and footer styling: nav is part of header */
+
+header, footer {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:rgb(18, 21, 21);
+    font-weight: bold;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+nav, footer {
+    background-color: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(218, 214, 208, 0.8));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10%;
+    padding-left: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    
+}
+footer {
+    justify-content: space-between;
+}
+.nav-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: auto;
+    width: 80%;
+    height: 100%;
+}
+
+.nav-content li {
+    display: inline-block;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.nav-content a {
+    color: rgb(77, 76, 76);
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s ease;
+    padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+
+}
+/* Nav links interactive */
+.nav-content a:hover {
+    color: rgb(40, 77, 240);
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.icon-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 20px;
+}
+/* Nav icon rotates */
+.nav-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    animation: rotate 10s infinite linear;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 30px;
+}
+
+/* Home styling */
+
+#home {
+    background: radial-gradient(circle, rgba(128,222,234,0.6) 0%, rgba(255,255,255,0.762532981530343) 76%);    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    flex-grow: 2;
+    border-radius: 10px;
+}
+#home h2 {
+    color: #1e2b31;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1.8em;
+    letter-spacing: 0.7rem;
+    text-shadow: 0px 2px 2px rgb(3, 169, 244, 0.1),
+             0px 2px 2px rgb(79, 195, 247, 0.2);
+
+}
+
+/* Profile picture styling */
+.profile-picture {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    filter: brightness(110%);
+    border: 0.5px solid rgba(165, 162, 162, 0.3);
+    padding: 5px;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(45, 44, 49, 0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(39, 42, 50, 0.75);
+	box-shadow: 0px 0px 14px 0px rgba(30, 33, 44, 0.75);
+}
+/* Profile picture transforms and brightens on hover */
+.profile-picture:hover {
+    filter: brightness(120%);
+    transform: scale(1.05);
+}
+.blurb {
+    font-family: "Palatino", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    color:rgb(117, 116, 116);
+    line-height: 1.8em;
+    letter-spacing: 0.1rem;
+    padding: 10px 30px;
+}
+/* Focus on blurb when hover */
+.blurb:hover{
+    color:black;
+    transform: scale(1.03);
+}
+
+/* About Me Styling */
+
+#aboutme {
+    background: -moz-radial-gradient(circle, rgba(79,195,247,0.2) 0%, rgba(242,249,252,0.4) 100%);
+    background: -webkit-radial-gradient(circle, rgba(79,195,247,0.2) 0%, rgba(242,249,252,0.4) 100%);
+    background: radial-gradient(circle, rgba(79,195,247,0.2) 0%, rgba(242,249,252,0.4) 100%);
+    width: 100%;
+    text-align: center;
+    flex-grow: 2;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 8px 8px white inset;
+
+}
+#aboutme h2 {
+    color: #101d23;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.5em;
+    letter-spacing: 0.2rem;
+    text-shadow: 0px 2px 2px rgba(119, 120, 121, 0.208),
+             0px 2px 2px rgba(199, 204, 206, 0.055);
+
+}
+#aboutme div {
+    padding: 10px 20px;
+    text-align: left;
+}
+#aboutme h3 {
+    color:#1e2b31;
+    font-weight: 550;
+    letter-spacing: 0.1rem;
+    line-height: 1.3rem;
+    font-size: 1.5rem;
+}
+#aboutme ul {
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    font-size: 1.15rem;
+}
+/* Interactive items on hover */
+#aboutme ul:hover {
+    font-weight: 600;
+}
+#aboutme li {
+    color:#494d4f;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+}
+#aboutme li:hover {
+    color:#073146;
+    font-size: 1.05rem;
+}
+
+/* Projects styling */
+
+#projects {
+    background: -moz-radial-gradient(circle, rgba(128,222,234,0.1) 0%, rgba(3,169,244,0.2) 49%, rgba(38,50,56,0.3726027397260274) 100%);
+    background: -webkit-radial-gradient(circle, rgba(128,222,234,0.1) 0%, rgba(3,169,244,0.2) 49%, rgba(38,50,56,0.3726027397260274) 100%);
+    background: radial-gradient(circle, rgba(128,222,234,0.1) 0%, rgba(3,169,244,0.2) 49%, rgba(38,50,56,0.3726027397260274) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#80deea",endColorstr="#263238",GradientType=1);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 50px 50px rgba(255, 255, 255, 0.687) inset;
+    box-shadow: 0 0 6px 6px rgba(255, 255, 255, 0.884) inset;
+    text-align: center;
+}
+
+#projects h2 {
+    color: #132a35;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0px 2px 2px rgba(212, 216, 219, 0.208),
+             0px 2px 2px rgba(224, 237, 243, 0.151);
+
+}
+
+#projects p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    letter-spacing: 0.1rem;
+    color:#494d4f;
+    
+}
+.project-collection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-card {
+    top: 50%;
+    left: 50%;
+    width: 330px;
+    height: 300px;
+    float: left;
+    perspective: 500px;
+    
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 10px 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+.project-icon {
+    width: 70px;
+    height: 70px;
+
+}
+.main-summary {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    align-items: center;
+    text-align: center;
+    line-height: 3rem;
+    padding: 10px 40px;
+}
+.main-summary h3 {
+    color:#1e2b31;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    line-height: 2.2rem;
+    font-size: 1.8rem;
+}
+.details {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    text-align: left;
+    transform: rotateY( 180deg );
+    backface-visibility: hidden;
+    color:#494d4f;
+    font-weight: lighter;
+    letter-spacing: 0.05rem;
+}
+/* Project card flips to the back with the details on hover */
+.project-card:hover {
+    transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+  }
+
+  /* Button leading to repository, interactive on hover and focus */
+.repo-button {
+    display: inline-block;
+    background: #80DEEA;
+    color: #263238;
+    padding: 10px 10px;
+    font-size: 0.8em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(45, 44, 49, 0.75);
+	-moz-box-shadow: 0px 0px 4px 0px rgba(39, 42, 50, 0.75);
+	box-shadow: 0px 0px 4px 0px rgba(30, 33, 44, 0.75);
+}
+@keyframes pulse {
+    0% { transform: scale(1);}
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+.repo-button:hover{
+    animation: pulse 1.5s infinite;
+    font-weight: bold;
+}
+.repo-button:focus{
+    background-color: #cdf9ff;
+    color:#002f96;
+}
+
+/* Skills styling */
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 20px;
+    background: -moz-radial-gradient(circle, rgba(79,195,247,0.2) 0%, rgba(242,249,252,0.4) 100%);
+    background: -webkit-radial-gradient(circle, rgba(79,195,247,0.2) 0%, rgba(242,249,252,0.4) 100%);
+    background: radial-gradient(circle, rgba(79,195,247,0.2) 0%, rgba(242,249,252,0.4) 100%);
+    box-shadow: 0 0 6px 6px rgba(255, 255, 255, 0.884) inset;
+
+}
+
+#skills h2 {
+    color: #132a35;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+}
+#skills h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    letter-spacing: 0.1rem;
+    padding-top: 25px;
+}
+
+.skill {
+    width: 80%;
+    height:30px;
+    margin-left: 10%;
+    margin-right: 10%; 
+    margin-bottom: 25px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 15px;
+    letter-spacing: 0.1rem;
+}
+/* SKills are visualized via bar */
+.skillbar {
+    width: 100%;
+    background-color: #8f9598cb;
+    border-radius: 5px;
+}
+#expert {
+    width: 100%;
+    background-color: #03A9F4;
+    color:white;
+}
+#fluent {
+    width: 75%;
+    background-color:#4FC3F7;
+    color:white;
+}
+#intermediate {
+    width:55%;
+    background-color: #80DEEA;
+    color:black;
+}
+
+#beginner {
+    width: 25%;
+    background-color: #b4f4fc;
+    color:black;
+
+}
+.bar {
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    text-align: right;
+    box-shadow: 0px 0px 4px 0px rgba(30, 33, 44, 0.75);
+    line-height: 20px;
+    letter-spacing: 0rem;
+}
+
+/* Contact Styling  */
+#contact {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(128,222,234,0.6) 0%, rgba(255,255,255,0.762532981530343) 76%); 
+    box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.457) inset;
+    box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.765) inset;
+    padding-top: 25px;
+    text-align: center;
+}
+
+#contact h2 {
+    color:#132a35;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    text-shadow: -2px 1px 2px rgba(3, 169, 244, 0.19);
+
+}
+
+#contact h3 {
+    color: #263238;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+}
+.contact-container {
+    width: 50%;
+    min-width: 300px;
+    height: auto;
+    perspective: 500px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.5);
+    margin: 10px 20px;
+    margin-left: 30px;
+    border-radius: 10px;
+    padding-bottom: 40px;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.contact-icon {
+    width: 80px;
+    height: 80px;
+}
+.email .contact-icon {
+    margin-top: 15px;
+}
+.contact-section p,.contact-section a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 40px;
+    letter-spacing: 0.08rem;
+}
+
+.contact-section a{
+    text-decoration: none;
+    color:#002f96
+}
+
+/* Link hover styling */
+.contact-section a:hover{
+    text-decoration: underline;
+    color:purple;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+
+@keyframes rotate2 {
+    0%, 100% { transform: rotate(-15deg); }
+    50% { transform: rotate(15deg); }
+}
+
+/* Contact sections animate and transform when hover/focus */
+.contact-section:hover, .contact-section:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -20px #05ea86; 
+    animation: float 2s ease-in-out infinite;
+}
+/* Contact icon does a cute little rotation on hover */
+.contact-icon:hover {
+    animation: rotate2 1s infinite linear;
+}
+
+/* Contact form */
+.contact-form {
+    width: 70%;
+    min-width: 300px;
+    height: auto;
+    perspective: 500px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.5);
+    margin: 10px 20px;
+    margin-left: 30px;
+    border-radius: 10px;
+    padding-bottom: 40px;
+}
+.form-button {
+    display: inline-block;
+    background: #80DEEA;
+    color: #263238;
+    border-style: none;
+    padding: 10px 10px;
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(45, 44, 49, 0.75);
+	-moz-box-shadow: 0px 0px 4px 0px rgba(39, 42, 50, 0.75);
+	box-shadow: 0px 0px 4px 0px rgba(30, 33, 44, 0.75);
+
+  }
+/* Form button hover styling */
+  .form-button:hover {
+    background-color: #6dd9fa;
+    box-shadow: 0 0 16px 0px #05ea86; 
+    animation: pulse 2s infinite;
+  }
+
+
+.formarea {
+    margin-top: 15px;
+    padding: 5px 10px;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    color:#073146;
+}
+  input, textarea {
+    width: 100%; 
+    margin-top: 5px;
+    padding: 0; 
+    border: 0.5px solid rgba(128, 128, 128, 0.427);   
+    font-size: 1em;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Form area hover and input focus styling */
+.formarea:hover {
+    box-shadow: 0 0 40px -20px #05ea86; 
+    animation: pulse 0.8s;
+}
+input:focus, textarea:focus {
+    transform: scale(1.05);
+    border: 2px solid gray;
+    box-shadow: 0 0 16px 0px #ea7fff;
+}
+
+
+
+/* Addition for more responsiveness for nav and footer: row -> column for small screens */
+@media screen and (max-width: 600px) {
+    .nav-content, footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+   
+    
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--head includes meta for responsive design-->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sude Almus Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Sude Almus Portfolio</h1>
+                    <!--Navbar-->
+        <nav>
+            <ul class="nav-content">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <div class="icon-container"><img class="nav-icon" src="https://cdn3.iconfinder.com/data/icons/nature-37/120/tempaltaaae-1024.png" alt="nature icon"></div>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+            <!--Name, picture, and simple bio-->
+        <section id="home">
+            <h2>Sude Almus</h2>
+            <div class="home-content">
+            <img class="profile-picture" src="profilepicture.JPG" alt="Profile picture" width="330" height="500">
+            <div class="blurb"><p>Hi there! My name is Sude Almus and I am a sofware developer with a degree in Computer Science and Statistics from Duke University. 
+                My journey in tech has been both diverse and exciting, and one of my key passions is using technology to make a meaningful impact.
+            </p></div></div>
+        </section>
+    <!--More about me, more of a resume -->
+        <section id="aboutme">
+            <h2>More About Me</h2>
+            <div id="education">
+                <h3>Education:</h3>
+                <ul>
+                    B.S. Computer Science, Duke University
+                        <li>Minor in Statistics</li>
+                        <li>Full merit scholar: University Scholars Program</li>
+                        <li>2018-2023</li>
+                </ul>
+            </div>
+            <div id="experience">
+                <h3>Experience Highlights:</h3>
+                <ul>
+                    Software Engineer Intern, Qualtrics
+                        <li>Architected and developed new microservice for efficient log monitoring. </li>
+                        <li>May - Aug 2022</li>
+                </ul>
+                <ul>
+                    Software Engineer Intern, Surescripts
+                        <li>Designed and built optimized user interface for the master patient index database, processing 40 million daily records. </li>
+                        <li>May - Aug 2021</li>
+                </ul>
+                <ul>
+                    Software Engineer Intern, Duke OIT
+                        <li>Developed comprehensive full-stack web application addressing food insecurity at Duke. </li>
+                        <li>May 2020 - Jan 2021</li>
+                </ul>
+            </div>
+            <div id="personal">
+                <h3>Personal Interests:</h3>
+                <ul>
+                    <li>Playing the accordion</li>
+                    <li>Reading</li>
+                    <li>Pilates</li>
+                    <li>Learning languages and preserving endangered languages!</li>
+                </ul>
+            </div>
+        </section>
+    <!--Some of my favorite projects from coding temple, styled in cards that flip on hover -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <p> The following are some projects I've worked on recently. </p>
+            <div class="project-collection">
+            <div class="project-card">
+                <div class="main-summary">
+                    <h3>Mini e-commerce API</h3>
+                    <img class="project-icon" src="https://img.icons8.com/?size=100&id=42185&format=png&color=000000" alt="E-commerce Icon">
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>Built as part of Coding Temple curriculum</li>
+                        <li>Features an e-commerce database with endpoints for customer, customer account, and product, and order management. </li>
+                        <li>Uses Python and SQLAlchemy</li>                        
+                    </ul>
+                    <button class="repo-button" onclick="location.href='https://github.com/ksudea/CT-ecommerce-api'" type="button">GitHub Repo</button>
+                </div>
+                
+            </div>
+            <div class="project-card">
+                <div class="main-summary">
+                    <h3>Library management system</h3>
+                    <img class="project-icon" src="https://img.icons8.com/?size=100&id=44076&format=png&color=000000" alt="Library Icon">
+                </div>
+                <div class="details"><ul>
+                    <li>Built as part of Coding Temple curriculum</li>
+                    <li>Command line interface app for managing a library with features such as book, user, author, and genre operations. </li>
+                    <li>Uses Python and MySQL</li>
+                </ul>
+                <button class="repo-button" onclick="location.href='https://github.com/ksudea/library-management-system-db'" type="button">GitHub Repo</button>
+
+            </div>
+          </div>
+          <div class="project-card">
+                <div class="main-summary">
+                    <h3>Contact management system</h3>
+                    <img class="project-icon" src="https://img.icons8.com/?size=100&id=11641&format=png&color=000000" alt="Contact book Icon">
+
+                </div>
+            <div class="details">
+                <ul>
+                    <li>Built as part of Coding Temple curriculum</li>
+                    <li>Command line interface app for contact management with featues such as adding, editing, deleting, searching for, and importing/exporting contacts. </li>
+                    <li>Uses Python</li>
+                </ul>
+                <button class="repo-button" onclick="location.href='https://github.com/ksudea/contact-management-system'" type="button">GitHub Repo</button>
+            </div>
+            </div>
+        </div>
+        </section>
+    <!--Skills grouped into different divs, with bar styling for level-->
+        <section id="skills">
+            <h2>Skills</h2>
+            <h3>Programming Languages and Frameworks:</h3>
+            <div class="skill">
+                Java
+                <div class="skillbar"> <div class="bar" id="expert"><span>Expert</span></div></div>
+            </div>
+            <div class="skill">
+                Javascript
+                <div class="skillbar"> <div class="bar" id="fluent"><span>Fluent</span></div></div>
+            </div>
+            <div class="skill">
+                Python
+                <div class="skillbar"> <div class="bar" id="expert"><span>Expert</span></div></div>
+            </div>
+            <div class="skill">
+                TypeScript
+                <div class="skillbar"> <div class="bar" id="fluent"><span>Fluent</span></div></div>
+            </div>
+            <div class="skill">
+                Angular
+                <div class="skillbar"> <div class="bar" id="fluent"><span>Fluent</span></div></div>
+            </div>
+            <div class="skill">
+                R
+                <div class="skillbar"> <div class="bar" id="fluent"><span>Fluent</span></div></div>
+            </div>
+            <div class="skill">
+                C++
+                <div class="skillbar"> <div class="bar" id="intermediate"><span>Intermediate</span></div></div>
+                </div>
+            <h3>Development tools:</h3>
+            <div class="skill">
+                Git
+                <div class="skillbar"> <div class="bar" id="expert"><span>Expert</span></div></div>
+            </div>
+            <div class="skill">
+                Jenkins
+                <div class="skillbar"> <div class="bar" id="fluent"><span>Fluent</span></div></div>
+            </div>
+            <div class="skill">
+                Kubernetes
+                <div class="skillbar"> <div class="bar" id="beginner"><span>Beginner</span></div></div>
+            </div>
+            <div class="skill">
+                Jira
+                <div class="skillbar"> <div class="bar" id="fluent"><span>Fluent</span></div></div>
+            </div>
+            <div class="skill">
+                Docker
+                <div class="skillbar"> <div class="bar" id="beginner"><span>Beginner</span></div></div>
+            </div>
+            <h3>Database technologies:</h3>
+            <div class="skill">
+                SQL
+                <div class="skillbar"> <div class="bar" id="expert"><span>Expert</span></div></div>
+            </div>
+            <div class="skill">
+                MongoDB
+                <div class="skillbar"> <div class="bar" id="fluent"><span>Fluent</span></div></div>
+            </div>
+            <div class="skill">
+                DynamoDB
+                <div class="skillbar"> <div class="bar" id="beginner"><span>Beginner</span></div></div>
+            </div>
+        </section>
+    <!--Contact info and online presence-->
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <div class="contact-container">
+                <div class="contact-section email">
+                    <img class="contact-icon" src="icons8-email.png" alt="E-mail icon"/>
+                    <p>sudealmus@gmail.com</p>
+                </div>
+                <div class="contact-section linkedin">
+                    <img class="contact-icon" src="icons8-linkedin.png" alt="LinkedIn icon" />
+                    <a href="https://www.linkedin.com/in/sude-almus/">Find me on LinkedIn</a>
+                </div>
+                <div class="contact-section linkedin">
+                    <img class="contact-icon" src="icons8-github.png" alt="GitHub icon" />
+                    <a href="https://github.com/ksudea">Find me on GitHub</a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Shoot me an e-mail here:</h3>
+                <form action="#" method="POST">
+                    <div class="formarea">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="fullName" required />
+                    </div>
+            
+                    <div class="formarea">
+                        <label for="email">Your Email Address:</label>
+                        <input type="email" id="email" name="email" required />    
+                    </div>
+            
+                    <div class="formarea">
+                        <label for="message">Your Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>    
+                    </div>            
+                    <button class="form-button" type="submit">Send</button>
+                  </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>2024 Sude Almus All rights reserved.</p>
+        <div class="icon-container"><img class="nav-icon" src="https://cdn3.iconfinder.com/data/icons/nature-37/120/tempaltaaae-1024.png" alt="nature icon"></div>
+    </footer>
+</body>
+</html>
