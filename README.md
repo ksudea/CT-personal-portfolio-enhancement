@@ -6,7 +6,8 @@ This project is a portfolio featuring the following sections:
 - About Me
 - Projects
 - Skills
-- Contact
+- Contact.
+  
 It uses HTML & CSS and demonstrates responsive design, interactive styling and pseudoclasses, transitions and animations, and flexbox for layout control.
 
 How to run:
